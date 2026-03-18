@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Landing Page</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+
+body{background:#f5f5f5;color:#333}
+
+/* NAVBAR */
+nav{
+  display:flex;justify-content:space-between;
+  padding:15px 30px;background:#111;color:#fff;
+}
+nav a{color:#fff;text-decoration:none;margin-left:15px}
+
+/* HERO */
+.hero{
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff;text-align:center;
+}
+.hero h1{font-size:40px}
+.hero button{
+  margin-top:20px;padding:10px 20px;
+  border:none;background:red;color:#fff;cursor:pointer;
+}
+
+/* SECTION */
+.section{padding:50px 20px;text-align:center}
+
+/* CARDS */
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}
+.card{
+  background:#fff;padding:20px;width:250px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1)
+}
+
+/* CONTACT */
+input,textarea{
+  width:80%;padding:10px;margin:10px 0
+}
+button.submit{
+  padding:10px 20px;background:black;color:#fff;border:none
+}
+
+/* FOOTER */
+footer{
+  background:#111;color:#fff;text-align:center;padding:20px
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>My Restaurant</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Best Food in Your City</h1>
+    <p>Delicious & Fresh Meals Everyday</p>
+    <button>Order Now</button>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <div class="cards">
+    <div class="card">Fresh Ingredients</div>
+    <div class="card">Fast Delivery</div>
+    <div class="card">Best Taste</div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section">
+  <h2>Our Menu</h2>
+  <div class="cards">
+    <div class="card">Pizza - ₹199</div>
+    <div class="card">Burger - ₹99</div>
+    <div class="card">Pasta - ₹149</div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section">
+  <h2>What Customers Say</h2>
+  <p>"Amazing food and quick service!"</p>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>Contact Us</h2>
+  <input type="text" placeholder="Your Name"><br>
+  <input type="email" placeholder="Your Email"><br>
+  <textarea placeholder="Message"></textarea><br>
+  <button class="submit">Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 My Restaurant</p>
+</footer>
+
+</body>
+  </html>
